@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://levels/level_2/borboleta.tscn" type="PackedScene" id=1]
+[ext_resource path="res://levels/level_2/sombra_4.tscn" type="PackedScene" id=2]
+[ext_resource path="res://levels/level_2/sombra_3.tscn" type="PackedScene" id=3]
+[ext_resource path="res://levels/level_2/sombra_1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://levels/level_2/sombra_2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://levels/mainObj.gd" type="Script" id=6]
+
+[node name="level_2" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 880.0
+color = Color( 0.533333, 0.0784314, 0.611765, 1 )
+
+[node name="sombra_1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 661, 635 )
+
+[node name="sombra_2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 657, 271 )
+
+[node name="sombra_3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1054, 664 )
+
+[node name="sombra_4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1027, 292 )
+
+[node name="borboleta" parent="." instance=ExtResource( 1 )]
+position = Vector2( 250, 446 )
+script = ExtResource( 6 )
