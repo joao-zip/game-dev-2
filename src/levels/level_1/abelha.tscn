@@ -6,9 +6,6 @@
 radius = 37.5766
 
 [node name="abelha" type="Area2D"]
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
