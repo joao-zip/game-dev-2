@@ -6,6 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 94.9974, 156.455 )
 
+
 [sub_resource type="CircleShape2D" id=2]
 radius = 24.0
 

@@ -45,4 +45,4 @@ func _on_Area2D_mouse_exited():
 func _on_sombra_1_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	if area.get_name() == 'Area2DInside':
 		win = true
-
+    z_index = 1
