@@ -6,6 +6,7 @@ onready var background : ColorRect = $"../ColorRect"
 
 var init_position : Vector2
 var win : bool
+var winner : bool setget, get_win
 var mouse_over : bool
 #we need 2 frames to accept the entered of 2 areas after unpressed the button
 var pressed_frame : int
@@ -32,6 +33,9 @@ func _process(delta):
 				global_position = rigth_shadown.position
 		else:
 			pressed_frame -= 1
+			
+func get_win() -> bool:
+	return win
 
 
 func _on_Area2D_mouse_entered():

@@ -1,14 +1,14 @@
 extends Node2D
 
-export var winScene : 
+onready var picture : Node2D = $abelha
 
 func _ready():
 	pass
 
 
 func _process(delta):
-	pass
+	if picture.get_win():
+		get_tree().change_scene("res://win_level.tscn")
 
 
-func _on_sombra_1_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
-	get_tree().change_scene(winScene.resource_path)
+
