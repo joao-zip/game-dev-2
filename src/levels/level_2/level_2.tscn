@@ -29,3 +29,5 @@ position = Vector2( 1027, 292 )
 [node name="borboleta" parent="." instance=ExtResource( 1 )]
 position = Vector2( 250, 446 )
 script = ExtResource( 6 )
+
+[connection signal="area_shape_entered" from="sombra_1" to="borboleta" method="_on_sombra_1_area_shape_entered"]

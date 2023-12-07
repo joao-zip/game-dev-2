@@ -3,7 +3,7 @@
 [ext_resource path="res://img/borboleta/borboleta.png" type="Texture" id=1]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 30.0666
+radius = 21.0
 
 [node name="borboleta" type="Area2D"]
 __meta__ = {
