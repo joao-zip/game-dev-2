@@ -2,6 +2,7 @@ extends Node2D
 
 onready var level : Node2D = $".."
 onready var rigth_shadown : Area2D = $"../sombra_1"
+onready var background : ColorRect = $"../ColorRect"
 
 var init_position : Vector2
 var win : bool
@@ -14,6 +15,7 @@ func _ready():
 	mouse_over = false
 	win = false
 	pressed_frame = 0
+	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 
 func _process(delta):
@@ -43,3 +45,4 @@ func _on_Area2D_mouse_exited():
 func _on_sombra_1_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	if area.get_name() == 'Area2DInside':
 		win = true
+
