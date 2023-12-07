@@ -32,3 +32,4 @@ func _process(delta):
 func _on_sombra_1_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	print('Ganhemo')
 	win = true
+  z_index = 1
