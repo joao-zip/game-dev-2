@@ -14,6 +14,10 @@ config/name="Vamos Conhecer o Jardim?"
 run/main_scene="res://MainMenu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+SceneTransition="*res://sceneTransition.tscn"
+
 [display]
 
 window/size/width=1280
