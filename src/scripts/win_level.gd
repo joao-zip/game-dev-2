@@ -6,7 +6,7 @@ func _ready():
 	pass
 
 func _on_next_btn_pressed():
-	get_tree().change_scene("res://MainMenu.tscn")
+	get_tree().change_scene("res://Levels.tscn")
 
 
 func _on_quit_btn_pressed():
