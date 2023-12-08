@@ -15,3 +15,7 @@ func _on_Jogar_button_up():
 
 func _on_Criadores_button_up():
 	get_tree().change_scene("res://Creators.tscn")
+
+
+func _on_Sair_button_up():
+	get_tree().quit()

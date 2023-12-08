@@ -1,6 +1,6 @@
 extends Node2D
 
-onready var picture : Node2D = $flor
+onready var picture : Node2D = $borboleta
 
 func _ready():
 	pass
