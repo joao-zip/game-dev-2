@@ -256,4 +256,6 @@ autoplay = true
 attenuation = 0.125
 
 [connection signal="button_up" from="level_1" to="." method="_on_level_1_button_up"]
+[connection signal="button_up" from="level_2" to="." method="_on_level_2_button_up"]
+[connection signal="button_up" from="level_3" to="." method="_on_level_3_button_up"]
 [connection signal="button_up" from="Voltar" to="." method="_on_Voltar_button_up"]
