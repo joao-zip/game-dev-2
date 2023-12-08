@@ -9,7 +9,8 @@ size = 46
 outline_size = 3
 outline_color = Color( 0.0784314, 0.0156863, 0.0156863, 1 )
 use_filter = true
-extra_spacing_bottom = 3
+extra_spacing_top = 5
+extra_spacing_bottom = 12
 font_data = ExtResource( 2 )
 
 [sub_resource type="StyleBoxFlat" id=2]
@@ -74,15 +75,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 550.0
+margin_left = 504.0
 margin_top = 456.0
 margin_right = 747.0
 margin_bottom = 594.0
 alignment = 1
 
 [node name="next_btn" type="Button" parent="VBoxContainer"]
-margin_right = 197.0
-margin_bottom = 67.0
+margin_right = 243.0
+margin_bottom = 81.0
 custom_fonts/font = SubResource( 1 )
 custom_styles/hover = SubResource( 2 )
 custom_styles/pressed = SubResource( 3 )
@@ -90,14 +91,14 @@ custom_styles/normal = SubResource( 4 )
 text = "Próximo"
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
-margin_top = 71.0
-margin_right = 197.0
-margin_bottom = 75.0
+margin_top = 85.0
+margin_right = 243.0
+margin_bottom = 89.0
 
 [node name="quit_btn" type="Button" parent="VBoxContainer"]
-margin_top = 79.0
-margin_right = 197.0
-margin_bottom = 146.0
+margin_top = 93.0
+margin_right = 243.0
+margin_bottom = 174.0
 custom_fonts/font = SubResource( 1 )
 custom_styles/hover = SubResource( 2 )
 custom_styles/pressed = SubResource( 3 )
