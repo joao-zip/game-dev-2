@@ -32,3 +32,6 @@ position = Vector2( 227, 443 )
 z_index = 1
 
 [connection signal="area_shape_entered" from="sombra_1" to="abelha" method="_on_sombra_1_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_2" to="abelha" method="_on_sombra_2_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_3" to="abelha" method="_on_sombra_3_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_4" to="abelha" method="_on_sombra_4_area_shape_entered"]

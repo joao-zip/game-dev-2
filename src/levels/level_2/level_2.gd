@@ -9,3 +9,6 @@ func _ready():
 func _process(delta):
 	if picture.get_win():
 		get_tree().change_scene("res://win_level.tscn")
+	
+	if picture.get_lose():
+		SceneTransition.change_scene("res://Game_over.tscn")
