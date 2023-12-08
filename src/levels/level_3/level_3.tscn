@@ -29,3 +29,5 @@ position = Vector2( 1044, 369 )
 
 [node name="flor" parent="." instance=ExtResource( 2 )]
 position = Vector2( 192, 477 )
+
+[connection signal="area_shape_entered" from="sombra_1" to="flor" method="_on_sombra_1_area_shape_entered"]

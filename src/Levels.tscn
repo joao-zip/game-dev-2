@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://fonts/Rowdies-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://img/Desfocado.png" type="Texture" id=2]
 [ext_resource path="res://sounds/sound_2.mp3" type="AudioStream" id=3]
+[ext_resource path="res://scripts/Levels.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -60,7 +61,56 @@ corner_radius_bottom_left = 20
 shadow_size = 1
 shadow_offset = Vector2( 4, 4 )
 
+[sub_resource type="DynamicFont" id=6]
+size = 46
+outline_size = 3
+outline_color = Color( 0.0784314, 0.0156863, 0.0156863, 1 )
+use_filter = true
+extra_spacing_bottom = 3
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.12549, 0.254902, 0.529412, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 1
+shadow_offset = Vector2( 4, 4 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.0392157, 0.121569, 0.298039, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 1
+shadow_offset = Vector2( 4, 4 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.184314, 0.360784, 0.741176, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 1
+shadow_offset = Vector2( 4, 4 )
+
 [node name="Levels" type="Node2D"]
+script = ExtResource( 4 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 1280.0
@@ -188,8 +238,24 @@ custom_styles/pressed = SubResource( 4 )
 custom_styles/normal = SubResource( 5 )
 text = "10"
 
+[node name="Voltar" type="Button" parent="."]
+margin_left = 60.0
+margin_top = 723.0
+margin_right = 317.0
+margin_bottom = 813.0
+custom_fonts/font = SubResource( 6 )
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Voltar"
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
 volume_db = -11.826
 autoplay = true
 attenuation = 0.125
+
+[connection signal="button_up" from="level_1" to="." method="_on_level_1_button_up"]
+[connection signal="button_up" from="level_2" to="." method="_on_level_2_button_up"]
+[connection signal="button_up" from="level_3" to="." method="_on_level_3_button_up"]
+[connection signal="button_up" from="Voltar" to="." method="_on_Voltar_button_up"]

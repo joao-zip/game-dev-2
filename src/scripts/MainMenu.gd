@@ -11,3 +11,11 @@ func _init() -> void:
 
 func _on_Jogar_button_up():
 	get_tree().change_scene(levelScene.resource_path)
+
+
+func _on_Criadores_button_up():
+	get_tree().change_scene("res://Creators.tscn")
+
+
+func _on_Sair_button_up():
+	get_tree().quit()

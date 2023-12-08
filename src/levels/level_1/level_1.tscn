@@ -5,14 +5,15 @@
 [ext_resource path="res://levels/level_1/sombra_3.tscn" type="PackedScene" id=3]
 [ext_resource path="res://levels/level_1/sombra_1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://levels/level_1/sombra_2.tscn" type="PackedScene" id=5]
-[ext_resource path="res://levels/mainObj.gd" type="Script" id=6]
+[ext_resource path="res://levels/level_1/level_1.gd" type="Script" id=6]
 
 [node name="level_1" type="Node2D"]
+script = ExtResource( 6 )
 
-[node name="fundo" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 1280.0
 margin_bottom = 880.0
-color = Color( 0.345098, 0.643137, 0.819608, 1 )
+color = Color( 0.439216, 0.827451, 0.996078, 1 )
 
 [node name="sombra_1" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1013, 269 )
@@ -27,7 +28,7 @@ position = Vector2( 629, 265 )
 position = Vector2( 1033, 671 )
 
 [node name="abelha" parent="." instance=ExtResource( 1 )]
-position = Vector2( 211, 441 )
-script = ExtResource( 6 )
+position = Vector2( 227, 443 )
+z_index = 1
 
 [connection signal="area_shape_entered" from="sombra_1" to="abelha" method="_on_sombra_1_area_shape_entered"]
