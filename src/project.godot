@@ -37,6 +37,10 @@ ui_left_click={
 
 project/assembly_name="Vamos Conhecer o Jardim-"
 
+[physics]
+
+common/enable_pause_aware_picking=true
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
