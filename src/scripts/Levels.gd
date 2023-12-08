@@ -27,3 +27,19 @@ func _on_level_7_button_up():
 
 func _on_level_9_button_up():
 	SceneTransition.change_scene("res://levels/level_9/level_9.tscn")
+
+
+func _on_level_4_button_up():
+	SceneTransition.change_scene("res://levels/level_4/level_4.tscn")
+
+
+func _on_level_6_button_up():
+	SceneTransition.change_scene("res://levels/level_6/level_6.tscn")
+	
+	
+func _on_level_8_button_up():
+	SceneTransition.change_scene("res://levels/level_8/level_8.tscn")
+
+
+func _on_level_10_button_up():
+	SceneTransition.change_scene("res://levels/level_10/level_10.tscn")
