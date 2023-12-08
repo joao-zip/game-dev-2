@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://levels/level_5/sombra_4.tscn" type="PackedScene" id=1]
+[ext_resource path="res://levels/level_5/sombra_3.tscn" type="PackedScene" id=2]
+[ext_resource path="res://levels/level_5/sombra_2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://levels/level_5/sombra_1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://levels/level_5/girassol.tscn" type="PackedScene" id=5]
+[ext_resource path="res://levels/level_5/level_5.gd" type="Script" id=7]
+
+[node name="level_5" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 880.0
+color = Color( 0.686275, 0.784314, 0.117647, 1 )
+
+[node name="sombra_1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1084, 689 )
+scale = Vector2( 0.85, 0.85 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="sombra_2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 552, 366 )
+scale = Vector2( 0.85, 0.85 )
+
+[node name="sombra_3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 682, 688 )
+scale = Vector2( 0.85, 0.85 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="sombra_4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 913, 367 )
+scale = Vector2( 0.85, 0.85 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="girassol" parent="." instance=ExtResource( 5 )]
+position = Vector2( 198, 472 )
+scale = Vector2( 0.85, 0.85 )
+
+[connection signal="area_shape_entered" from="sombra_1" to="girassol" method="_on_sombra_1_area_shape_entered"]
