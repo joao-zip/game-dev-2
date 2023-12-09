@@ -41,3 +41,6 @@ __meta__ = {
 }
 
 [connection signal="area_shape_entered" from="sombra_1" to="pa_e_luva" method="_on_sombra_1_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_2" to="pa_e_luva" method="_on_sombra_2_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_3" to="pa_e_luva" method="_on_sombra_3_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_4" to="pa_e_luva" method="_on_sombra_4_area_shape_entered"]

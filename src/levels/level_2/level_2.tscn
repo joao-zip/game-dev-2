@@ -31,3 +31,6 @@ position = Vector2( 1027, 292 )
 position = Vector2( 250, 446 )
 
 [connection signal="area_shape_entered" from="sombra_1" to="borboleta" method="_on_sombra_1_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_2" to="borboleta" method="_on_sombra_2_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_3" to="borboleta" method="_on_sombra_3_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_4" to="borboleta" method="_on_sombra_4_area_shape_entered"]
