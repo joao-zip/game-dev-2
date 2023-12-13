@@ -45,3 +45,6 @@ position = Vector2( 198, 472 )
 scale = Vector2( 0.85, 0.85 )
 
 [connection signal="area_shape_entered" from="sombra_1" to="girassol" method="_on_sombra_1_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_2" to="girassol" method="_on_sombra_2_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_3" to="girassol" method="_on_sombra_3_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_4" to="girassol" method="_on_sombra_4_area_shape_entered"]

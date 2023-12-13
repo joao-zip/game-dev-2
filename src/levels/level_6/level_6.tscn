@@ -52,4 +52,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
+[connection signal="area_shape_entered" from="sombra_4" to="lagarta" method="_on_sombra_4_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_2" to="lagarta" method="_on_sombra_2_area_shape_entered"]
 [connection signal="area_shape_entered" from="sombra_1" to="lagarta" method="_on_sombra_1_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_3" to="lagarta" method="_on_sombra_3_area_shape_entered"]

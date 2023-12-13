@@ -17,7 +17,10 @@ func _ready():
 
 func _process(delta):
 	if picture.get_win():
-		get_tree().change_scene(\"res://win_level.tscn\")
+		SceneTransition.change_scene(\"res://win_level.tscn\")
+	
+	if picture.get_lose():
+		SceneTransition.change_scene(\"res://Game_over.tscn\")
 "
 
 [node name="level_7" type="Node2D"]
@@ -58,3 +61,6 @@ position = Vector2( 223, 551 )
 scale = Vector2( 0.7, 0.7 )
 
 [connection signal="area_shape_entered" from="sombra_1" to="pa" method="_on_sombra_1_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_2" to="pa" method="_on_sombra_2_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_3" to="pa" method="_on_sombra_3_area_shape_entered"]
+[connection signal="area_shape_entered" from="sombra_4" to="pa" method="_on_sombra_4_area_shape_entered"]

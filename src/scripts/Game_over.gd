@@ -1,9 +1,10 @@
 extends Node2D
 
+var Global
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	Global = preload("res://Global.gd")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -16,5 +17,9 @@ func _on_quit_btn_pressed():
 
 
 func _on_tentar_btn_pressed():
-	var current_scene = get_tree().get_current_scene()
-	get_tree().change_scene(current_scene)
+	SceneTransition.change_scene("res://Levels.tscn")
+	#var previous_scene_name = Global.get_previous_scene_name()
+	#var current_scene = get_tree().get_current_scene()
+	#get_tree().change_scene(current_scene)
+	#print(previous_scene_name.type)
+	# SceneTransition.change_scene(previous_scene_name)

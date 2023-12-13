@@ -7,6 +7,8 @@ onready var background : ColorRect = $"../ColorRect"
 var init_position : Vector2
 var win : bool
 var winner : bool setget, get_win
+var lose : bool
+var loser : bool setget, get_lose
 var mouse_over : bool
 #we need 2 frames to accept the entered of 2 areas after unpressed the button
 var pressed_frame : int
@@ -15,6 +17,7 @@ func _ready():
 	init_position = global_position
 	mouse_over = false
 	win = false
+	lose = false
 	pressed_frame = 0
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
@@ -38,6 +41,9 @@ func get_win() -> bool:
 	return win
 
 
+func get_lose() -> bool:
+	return lose
+
 func _on_Area2D_mouse_entered():
 	mouse_over = true
 
@@ -49,4 +55,22 @@ func _on_Area2D_mouse_exited():
 func _on_sombra_1_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	if area.get_name() == 'Area2DInside':
 		win = true
+	z_index = 1
+
+
+func _on_sombra_2_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	if area.get_name() == 'Area2DInside':
+		lose = true
+	z_index = 1
+
+
+func _on_sombra_3_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	if area.get_name() == 'Area2DInside':
+		lose = true
+	z_index = 1
+
+
+func _on_sombra_4_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	if area.get_name() == 'Area2DInside':
+		lose = true
 	z_index = 1
