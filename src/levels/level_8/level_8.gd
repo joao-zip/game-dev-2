@@ -6,7 +6,7 @@ func _ready():
 	pass
 
 
-func _process(delta):
+func _process(_delta):
 	if picture.get_win():
 		SceneTransition.change_scene("res://win_level.tscn")
 	
